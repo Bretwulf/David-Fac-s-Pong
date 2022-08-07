@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Parede : MonoBehaviour
+public class Bounce : MonoBehaviour
 {
     public float strenght;
     public Rigidbody2D ballimp;
