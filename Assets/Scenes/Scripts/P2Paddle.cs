@@ -23,4 +23,8 @@ public class P2Paddle : MonoBehaviour
            physics.AddForce(Vector2.down * this.speed);
         }
     }
+
+    public void ResetPosition(){
+        physics.position = new Vector2(physics.position.x, 0);
+    }
 }

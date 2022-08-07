@@ -5,10 +5,8 @@ using UnityEngine.UI;
 
 public class Score1 : MonoBehaviour
 {
-    public int scoreP1 = 0;
-    public Rigidbody2D ball;
-    public Ball ballscript;
-    public Text p1;
+    public ScoreManager score;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +20,7 @@ public class Score1 : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision){
         if (collision.gameObject.tag == "ball"){
-            scoreP1++;
-             this.p1.text = scoreP1.ToString();
-            ballscript.ResetPosition();
-        }
+            score.P1Scores(); 
+    }
     }
 }
