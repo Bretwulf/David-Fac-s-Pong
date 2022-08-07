@@ -24,10 +24,7 @@ public class Score2 : MonoBehaviour
         if (collision.gameObject.tag == "ball"){
             scoreP2++;
             this.p2.text = scoreP2.ToString();
-            Debug.Log(scoreP2);
-            ball.position = Vector2.zero;
-            ball.velocity = Vector2.zero;
-            ballscript.AddStartingForce();
+            ballscript.ResetPosition();
 
         }
     }

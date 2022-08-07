@@ -18,6 +18,11 @@ public class Ball : MonoBehaviour
         physics.AddForce(new Vector2(x,y)*this.speed);
 
     }
+    public void ResetPosition(){
+        physics.position = Vector2.zero;
+        physics.velocity = Vector2.zero;
+        AddStartingForce();
+    }
 
     // Update is called once per frame
     void Update()
